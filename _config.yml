@@ -6,10 +6,9 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Jekyll Gulp Boilerplate
-email: esausilva85@gmail.com
-description: A boilerplate project including full setup for Jekyll, GulpJS, SASS, PostCSS, BrowserSync, Autoprefixer and deploy to GitHub Pages using Gulp.
-baseurl: "/project" # the subpath of your site, e.g. /blog
+title: Parrains Seafood
+email: ijadams503@gmail.com
+description: Parrains Seafood - Baton Rouge, LA
 url: "http://demontrer.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings

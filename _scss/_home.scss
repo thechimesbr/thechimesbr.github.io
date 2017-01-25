@@ -1,3 +1,19 @@
 #home-hero {
   height: 100vh;
+  #hero-text {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, rgba(220,160,119, 1), rgba(220,160,119, 0.9), rgba(220,160,119, 0.6), transparent);
+    h1 {
+      color: white;
+      font-family: 'lust', cursive;
+      letter-spacing: 0.2rem;
+      width: 70%;
+    }
+  }
 }

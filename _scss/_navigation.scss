@@ -1,4 +1,7 @@
-/* Bootstrap NavBar Color Override http://work.smarchal.com/twbscolor/scss/f8f8f8e7e7e73333333333331 */
+@font-face {
+  font-family: 'gigi';
+  src: url('https://s3.amazonaws.com/ijadams/parrains/gigi-webfont.woff') format('woff');
+}
 
 $bgDefault      : transparent;
 $bgHighlight    : #e7e7e7;
@@ -7,12 +10,23 @@ $colHighlight   : #333333;
 $dropDown       : true;
 
 body.home {
+  .navbar-nav {
+    float: right;
+  }
+  .navbar-header {
+    font-family: 'gigi';
+    a {
+      font-size: 4rem;
+    }
+  }
   .navbar-default {
     z-index: 1;
     background: transparent;
     border: none;
     position: absolute;
     width: 100%;
+    float: right;
+    margin-top: 0.8rem;
     .container {
       background: transparent;
     }

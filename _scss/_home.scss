@@ -63,6 +63,22 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: 0.5s ease-in-out;
+    &:hover {
+      cursor: pointer;
+      &:nth-of-type(1) {
+        background: white;
+      }
+      &:nth-of-type(2) {
+        background: white;
+      }
+      &:nth-of-type(3) {
+        background: white;
+      }
+      .wrapper h3:after {
+        width: 100%;
+      }
+    }
     &:nth-of-type(1) {
       background: #f8eee7;
     }
@@ -81,13 +97,62 @@
         max-width: 500px;
         margin-bottom: 2rem;
       }
+      .line-wrapper {
+        width: 100%;
+        display: block;
+        padding: 0 25%;
+      }
       h3 {
         font-weight: 300;
+        letter-spacing: 1px;
+        &:after {
+          content: '';
+          margin-top: 0.4rem;
+          display: block;
+          width: 0;
+          height: 3px;
+          background-image: url(https://s3.amazonaws.com/ijadams/parrains/push-line5.png);
+          transition: width .3s;
+        }
       }
       p {
         margin: 0 auto;
         padding: 1rem 10% 0 10%;
         line-height: 1.8rem;
+      }
+    }
+  }
+}
+
+#home-article {
+  height: auto;
+  min-height: 75vh;
+  background: url('https://s3.amazonaws.com/ijadams/parrains/exterior.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+  position: relative;
+  .overlay {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, black, rgba(0,0,0,0.9), transparent);
+  }
+  .content {
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .container {
+      position: relative;
+      color: white;
+      .button {
+        margin-top: 2rem;
+        display: inline-block;
       }
     }
   }

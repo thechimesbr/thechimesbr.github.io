@@ -1,5 +1,6 @@
 #home-hero {
   height: 100vh;
+  position: relative;
   #hero-text {
     position: absolute;
     height: 100%;
@@ -8,12 +9,86 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(to right, rgba(220,160,119, 1), rgba(220,160,119, 0.9), rgba(220,160,119, 0.6), transparent);
+    background: url('https://s3.amazonaws.com/ijadams/parrains/black-pattern.png') repeat;
     h1 {
       color: white;
-      font-family: 'lust', cursive;
       letter-spacing: 0.2rem;
-      width: 70%;
+      font-weight: 700;
+      width: 100%;
+      text-align: center;
+    }
+    .fa {
+      display: block;
+      color: white;
+      text-align: center;
+      font-size: 2em;
+      padding-top: 2rem;
+      position: absolute;
+      width: 100%;
+      bottom: 4rem;
+      left: 0;
+    }
+  }
+}
+
+#push-boxes {
+  position: relative;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  outline: 0;
+  outline-color: transparent;
+  -webkit-appearance: none;
+  display:-moz-box;
+ display:-webkit-box;
+ display:box;
+ -moz-box-orient:horizontal;
+ -webkit-box-orient:horizontal;
+ box-orient:horizontal;
+ width:100%;
+  #boxes {
+      text-align: center;
+  }
+  .box {
+    padding: 0;
+    margin: 0;
+    width: 33.33%;
+    max-width: 500px;
+    background: red;
+    min-height: 50vh;
+    -moz-box-flex:1;
+    -webkit-box-flex:1;
+    box-flex:1;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:nth-of-type(1) {
+      background: #f8eee7;
+    }
+    &:nth-of-type(2) {
+      background: #f4e7d8;
+    }
+    &:nth-of-type(3) {
+      background: #f4decb;
+    }
+    .wrapper {
+      padding: 0 15%;
+      width: 100%;
+      height: 100%;
+      img {
+        width: 100%;
+        max-width: 500px;
+        margin-bottom: 2rem;
+      }
+      h3 {
+        font-weight: 300;
+      }
+      p {
+        margin: 0 auto;
+        padding: 1rem 10% 0 10%;
+        line-height: 1.8rem;
+      }
     }
   }
 }

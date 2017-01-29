@@ -6,6 +6,7 @@ footer {
   height: auto;
   width: 100%;
   color: white;
+  clear: both;
   .top {
     text-align: center;
     padding: 4rem 0 0rem 0;
@@ -32,6 +33,15 @@ footer {
     }
     &:nth-of-type(3) {
       text-align: right;
+    }
+  }
+  @media screen and (max-width: 64rem) {
+    .col-md-4 {
+      text-align: center !important;
+    }
+    ul {
+      text-align: center;
+      padding: 0;
     }
   }
   ul {

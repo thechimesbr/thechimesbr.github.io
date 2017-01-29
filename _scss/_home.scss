@@ -46,6 +46,9 @@
  -webkit-box-orient:horizontal;
  box-orient:horizontal;
  width:100%;
+ @media screen and (max-width: 40rem) {
+   display: block;
+ }
   #boxes {
       text-align: center;
   }
@@ -64,6 +67,14 @@
     align-items: center;
     justify-content: center;
     transition: 0.5s ease-in-out;
+    @media screen and (max-width: 40rem) {
+      width: 100%;
+      display: block;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
     &:hover {
       cursor: pointer;
       &:nth-of-type(1) {
@@ -171,11 +182,24 @@
     display: inline-block;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center !important;
     height: 100%;
     min-height: 50vh;
     height: auto;
     position: relative;
+    transition: 0.3s ease-in;
+    border-top: 0.8rem solid $tan-dark;
+    border-bottom: 0.8rem solid $tan-dark;
+    &:hover {
+      border-top: 0.4rem solid white;
+      border-bottom: 0.4rem solid white;
+    }
+    @media screen and (max-width: 64rem) {
+      width: 25%;
+    }
+    @media screen and (max-width: 40rem) {
+      width: 50%;
+    }
     .overlay {
       display: flex;
       align-items: center;
@@ -188,6 +212,10 @@
       color: white;
       letter-spacing: 1px;
       transition: 0.25s ease-in;
+      @media screen and (max-width: 64rem) {
+        opacity: 1;
+        background: rgba(0,0,0,0.45);
+      }
       h3 {
         font-weight: 700;
       }

@@ -18,6 +18,9 @@ body {
     min-height: 100%;
     background: white;
     font-family: "proxima-nova", sans-serif;
+    a:hover {
+      color: $tan-medium;
+    }
 }
 
 .bx-viewport, .bx-wrapper{

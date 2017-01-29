@@ -18,6 +18,7 @@ body {
     min-height: 100%;
     background: white;
     font-family: "proxima-nova", sans-serif;
+    background: $tan-light;
     a:hover {
       color: $tan-medium;
     }
@@ -70,6 +71,7 @@ body {
 @import 'navigation';
 @import 'footer';
 @import 'syntaxHighlighter';
+@import 'interior';
 @import 'home';
 @import 'about';
 @import 'contact';

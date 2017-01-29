@@ -9,7 +9,7 @@ $colDefault     : #333333;
 $colHighlight   : #333333;
 $dropDown       : true;
 
-body.home {
+body {
   .navbar-nav {
     float: right;
   }
@@ -17,6 +17,9 @@ body.home {
     font-family: 'gigi';
     a {
       font-size: 4rem;
+    }
+    img {
+      max-width: 150px;
     }
   }
   .navbar-default {

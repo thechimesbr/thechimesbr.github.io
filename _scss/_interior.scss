@@ -1,0 +1,46 @@
+#base-hero {
+  height: 50vh;
+  position: relative;
+  background: url('https://s3.amazonaws.com/ijadams/parrains/baton-rouge.jpg') no-repeat;
+  background-position: center;
+  background-size: cover;
+  .hero-text {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('https://s3.amazonaws.com/ijadams/parrains/black-pattern.png') repeat;
+    h1 {
+      color: white;
+      letter-spacing: 0.2rem;
+      font-weight: 700;
+      width: 100%;
+      text-align: left;
+      display: none;
+    }
+    .fa {
+      display: block;
+      color: white;
+      text-align: center;
+      font-size: 2em;
+      padding-top: 2rem;
+      position: absolute;
+      width: 100%;
+      bottom: 4rem;
+      left: 0;
+    }
+  }
+}
+
+body.interior {
+  #main {
+    h1 {
+      font-weight: 700;
+    }
+    padding-top: 4rem;
+    padding-bottom: 8rem;
+  }
+}

@@ -8,14 +8,15 @@ footer {
   color: white;
   clear: both;
   .top {
-    text-align: center;
     padding: 4rem 0 0rem 0;
-    img {
-      max-height: 40px;
-    }
   }
   .bottom {
-    padding-bottom: 4rem;
+    text-align: center;
+    padding-bottom: 2rem;
+    img {
+      max-height: 40px;
+      display: none;
+    }
   }
   a {
     color: white;

@@ -203,8 +203,8 @@
     border-top: 0.8rem solid $tan-dark;
     border-bottom: 0.8rem solid $tan-dark;
     &:hover {
-      border-top: 0.4rem solid white;
-      border-bottom: 0.4rem solid white;
+      border-top: 0.4rem solid $yellow;
+      border-bottom: 0.4rem solid $yellow;
     }
     @media screen and (max-width: 64rem) {
       width: 25%;

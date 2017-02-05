@@ -1,5 +1,10 @@
 $(document).ready(function() {
-  
+
+  $('.navbar-toggle').on('click', function(){
+    $(this).toggleClass('active');
+    $('#overlay').toggleClass('open');
+  });
+
    $('.bxslider').bxSlider({
      mode: 'fade',
      speed: 1000,

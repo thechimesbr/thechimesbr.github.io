@@ -40,6 +40,9 @@ body.interior {
     h1 {
       font-weight: 700;
     }
+    a:hover {
+      color: inherit;
+    }
     padding-top: 4rem;
     padding-bottom: 8rem;
   }

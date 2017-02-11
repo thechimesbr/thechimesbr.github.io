@@ -19,8 +19,65 @@ $button-width: 35px;
 
 
 body {
+  .about {
+    .navbar-nav {
+      li:first-of-type {
+        background: white;
+        font-weight: 700;
+        border-radius: 0rem 0rem 1rem 1rem;
+        a {color: black !important;}
+      }
+    }
+  }
+  .menu {
+    .navbar-nav {
+      li:nth-of-type(2) {
+        background: white;
+        font-weight: 700;
+        border-radius: 0rem 0rem 1rem 1rem;
+        a {color: black !important;}
+      }
+    }
+  }
+  .gallery {
+    .navbar-nav {
+      li:nth-of-type(3) {
+        background: white;
+        font-weight: 700;
+        border-radius: 0rem 0rem 1rem 1rem;
+        a {color: black !important;}
+      }
+    }
+  }
+  .contact {
+    .navbar-nav {
+      li:nth-of-type(4) {
+        background: white;
+        font-weight: 700;
+        border-radius: 0rem 0rem 1rem 1rem;
+        a {color: black !important;}
+      }
+    }
+  }
   .navbar-nav {
     float: right;
+    font-size: 1.6rem;
+    li {
+      padding-top: 1rem;
+      border-radius: 0rem 0rem 1rem 1rem;
+      transition: 0.3s ease-in-out;
+      letter-spacing: 1px;
+      min-width: 9rem;
+      text-align: center;
+      font-size: 1.6rem;
+      a {transition: 0.3s ease-in;}
+      &:hover {
+        box-shadow: inset 0 100px 0 0 white;
+        a {
+          color: black !important;
+        }
+      }
+    }
   }
   .navbar-header {
     font-family: 'gigi';
@@ -38,7 +95,6 @@ body {
     position: absolute;
     width: 100%;
     float: right;
-    margin-top: 0.8rem;
     z-index: 9999;
     .navbar-toggle {
       border: 0;
@@ -99,6 +155,7 @@ body {
     }
     .navbar-brand {
       color: black;
+      margin-top: 1rem;
       &.open {
         position: fixed;
       }

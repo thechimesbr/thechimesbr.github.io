@@ -22,14 +22,36 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body class="home interior {% body_class %}">
+  <body class="home interior">
     <script
       src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous">
     </script>
 
 
-    {% include navigation.html %}
-    {% include base-hero.html %}
+    {% if page.title == 'About' %}
+      <div class="about">
+        {% include navigation.html %}
+        {% include base-hero.html %}
+      </div>
+    {% elsif page.title == 'Menu' %}
+      <div class="menu">
+        {% include navigation.html %}
+        {% include base-hero.html %}
+      </div>
+    {% elsif page.title == 'Gallery' %}
+      <div class="gallery">
+        {% include navigation.html %}
+        {% include base-hero.html %}
+      </div>
+    {% elsif page.title == 'Contact' %}
+      <div class="contact">
+        {% include navigation.html %}
+        {% include base-hero.html %}
+      </div>
+    {% else %}
+      {% include navigation.html %}
+      {% include base-hero.html %}
+    {% endif %}
 
     <section id="main">
       <div class="container">

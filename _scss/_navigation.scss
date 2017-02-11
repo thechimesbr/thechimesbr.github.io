@@ -10,7 +10,7 @@ $colHighlight   : #333333;
 $dropDown       : true;
 
 $color-background: #F5F5F5;
-$color-main: #ac8156;
+$color-main: rgba(0,0,0,0.85);
 $color-active: $tan-light;
 $color-link: $tan-light;
 
@@ -22,20 +22,26 @@ body {
   .about {
     .navbar-nav {
       li:first-of-type {
-        background: white;
+        background: $tan-light;
         font-weight: 700;
         border-radius: 0rem 0rem 1rem 1rem;
         a {color: black !important;}
+        &:hover {
+          box-shadow: none;
+        }
       }
     }
   }
   .menu {
     .navbar-nav {
       li:nth-of-type(2) {
-        background: white;
+        background: $tan-light;
         font-weight: 700;
         border-radius: 0rem 0rem 1rem 1rem;
         a {color: black !important;}
+        &:hover {
+          box-shadow: none;
+        }
       }
     }
   }
@@ -46,6 +52,9 @@ body {
         font-weight: 700;
         border-radius: 0rem 0rem 1rem 1rem;
         a {color: black !important;}
+        &:hover {
+          box-shadow: none;
+        }
       }
     }
   }
@@ -56,6 +65,9 @@ body {
         font-weight: 700;
         border-radius: 0rem 0rem 1rem 1rem;
         a {color: black !important;}
+        &:hover {
+          box-shadow: none;
+        }
       }
     }
   }
@@ -68,11 +80,12 @@ body {
       transition: 0.3s ease-in-out;
       letter-spacing: 1px;
       min-width: 9rem;
+      margin: 0 0.1rem;
       text-align: center;
       font-size: 1.6rem;
       a {transition: 0.3s ease-in;}
       &:hover {
-        box-shadow: inset 0 100px 0 0 white;
+        box-shadow: inset 0 100px 0 0 $tan-light;
         a {
           color: black !important;
         }
@@ -203,7 +216,7 @@ body {
   }
 
   span {
-  background: $color-main;
+  background: white;
   border: none;
   height: 5px;
   width: 100%;

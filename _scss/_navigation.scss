@@ -10,7 +10,7 @@ $colHighlight   : #333333;
 $dropDown       : true;
 
 $color-background: #F5F5F5;
-$color-main: $yellow;
+$color-main: #ac8156;
 $color-active: $tan-light;
 $color-link: $tan-light;
 
@@ -99,6 +99,9 @@ body {
     }
     .navbar-brand {
       color: black;
+      &.open {
+        position: fixed;
+      }
     }
     .navbar-collapse, .navbar-default .navbar-form {
       border-color: transparent;

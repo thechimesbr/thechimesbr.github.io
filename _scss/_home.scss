@@ -203,8 +203,8 @@
     border-top: 0.8rem solid $tan-dark;
     border-bottom: 0.8rem solid $tan-dark;
     &:hover {
-      border-top: 0.4rem solid $yellow;
-      border-bottom: 0.4rem solid $yellow;
+      border-top: 0.4rem solid white;
+      border-bottom: 0.4rem solid white;
     }
     @media screen and (max-width: 64rem) {
       width: 25%;
@@ -234,6 +234,9 @@
         font-weight: 700;
         transform: translateY(20px);
         transition: 0.2s ease-in;
+        @media screen and (max-width: 64rem) {
+          transform: translateY(0);
+        }
       }
       &:hover {
         opacity: 1;

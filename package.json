@@ -3,8 +3,7 @@
   "version": "0.0.1",
   "description": "A static site for Parrains Seafood.",
   "main": "gulpfile.js",
-  "scripts": {
-  },
+  "scripts": {},
   "author": "Ian Adams",
   "license": "ISC",
   "devDependencies": {
@@ -22,6 +21,20 @@
     "type": "git",
     "url": "https://github.com/demontrer/demontrer.github.io"
   },
-  "keywords": ["jekyll","gulp","sass","postcss","browsersync","gulp gh-pages","GitHub Pages","autoprefixer","materialize","jquery"],
-  "homepage": "https://github.com/demontrer/demontrer.github.io"
+  "keywords": [
+    "jekyll",
+    "gulp",
+    "sass",
+    "postcss",
+    "browsersync",
+    "gulp gh-pages",
+    "GitHub Pages",
+    "autoprefixer",
+    "materialize",
+    "jquery"
+  ],
+  "homepage": "https://github.com/demontrer/demontrer.github.io",
+  "dependencies": {
+    "smoothstate": "^0.7.2"
+  }
 }

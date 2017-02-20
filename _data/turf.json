@@ -1,0 +1,37 @@
+[
+  {
+    "name": "14-oz Bone in Pork Chop",
+    "price": "$19.95",
+    "description": "Served with garlic mashed potatoes and fresh green beans"
+  },
+  {
+    "name": "Whole Fried Cornish Hen",
+    "price": "$15.95",
+    "description": "Like a little fried turkey served with dirty rice"
+  },
+  {
+    "name": "Chicken Platter",
+    "price": "$12.95",
+    "description": "Grilled boneless skinless breast served with dirty rice and broccoli with hollandaise"
+  },
+  {
+    "name": "12-oz Angus Ribeye",
+    "price": "$23.95",
+    "description": "Served with garlic mashed potatoes and fresh green beans"
+  },
+  {
+    "name": "8-oz Angus Filet",
+    "price": "$26.95",
+    "description": "Served with garlic mashed potatoes and fresh green beans"
+  },
+  {
+    "name": "add Crawfish & Bearnaise",
+    "price": "$5.00",
+    "description": ""
+  },
+  {
+    "name": "add Crabmeat & Caper Holly",
+    "price": "$6.00",
+    "description": ""
+  }
+]

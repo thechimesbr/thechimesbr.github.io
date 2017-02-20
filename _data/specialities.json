@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Andouille Encrusted Fish",
+    "price": "$19.95"
+  },
+  {
+    "name": "The Delacroix",
+    "price": "$18.95"
+  },
+  {
+    "name": "New Orleans BBQ Shrimp",
+    "price": "$17.95"
+  },
+  {
+    "name": "Crawfish Etouffee",
+    "price": "$12.50"
+  },
+  {
+    "name": "1/2 & 1/2 Etouffee and Tails",
+    "price": "$15.95"
+  },
+  {
+    "name": "Grilled Fresh Fish",
+    "price": "$19.95"
+  },
+  {
+    "name": "Catfish Perdu",
+    "price": "$14.95"
+  },
+  {
+    "name": "Seafood Pasta",
+    "price": "$20.95"
+  },
+  {
+    "name": "The Pontchartrain",
+    "price": "$20.95"
+  },
+  {
+    "name": "BBQ Drum",
+    "price": "$17.95"
+  },
+  {
+    "name": "The Maurepas",
+    "price": "$17.95"
+  },
+  {
+    "name": "The Vermillion",
+    "price": "$19.95"
+  },
+  {
+    "name": "Black & Bleu Tuna",
+    "price": "$23.95"
+  },
+  {
+    "name": "Grilled Duck Breast",
+    "price": "$22.95"
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Blackened Shrimp Remoulade",
+    "price": "$12.95",
+    "description": ""
+  },
+  {
+    "name": "Fried Oyster Caesar",
+    "price": "$13.95",
+    "description": ""
+  },
+  {
+    "name": "Grilled Chicken Caesar",
+    "price": "$10.95",
+    "description": ""
+  },
+  {
+    "name": "Blackened Tuna Caesar",
+    "price": "$14.95",
+    "description": ""
+  },
+  {
+    "name": "Coleslaw with Peanuts",
+    "price": "$3.50",
+    "description": ""
+  },
+  {
+    "name": "Tossed Salad",
+    "price": "$3.25",
+    "description": "Served with your choice of homemade Bacon Cheddar Ranch, Green Goddess, Fat-Free Honey Mustard, Bleu Cheese, Caesar, Remoulade or Tabasco Pepper Jelly Vinaigrette dressing"
+  }
+]

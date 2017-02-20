@@ -1,0 +1,31 @@
+[
+  {
+    "name": "Crab & Corn Bisque Cup",
+    "price": "$6.50"
+  },
+  {
+    "name": "Crab & Corn Bisque Bowl",
+    "price": "$8.50"
+  },
+  {
+    "name": "Seafood Gumbo Cup",
+    "price": "$6.50"
+  },
+  {
+    "name": "Seafood Gumbo Bowl",
+    "price": "$8.50"
+  },
+  {
+    "name": "Turtle Soup Cup",
+    "price": "$6.50"
+  },
+  {
+    "name": "Turtle Soup Bowl",
+    "price": "$8.50"
+  },
+  {
+    "name": "Soup & Salad",
+    "price": "$10.50",
+    "description": "Your choice of a large soup served with a tossed salad or cole slaw."
+  }
+]

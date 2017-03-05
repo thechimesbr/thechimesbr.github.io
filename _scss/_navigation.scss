@@ -48,7 +48,7 @@ body {
   .gallery {
     .navbar-nav {
       li:nth-of-type(3) {
-        background: white;
+        background: $tan-light;
         font-weight: 700;
         border-radius: 0rem 0rem 1rem 1rem;
         a {color: black !important;}
@@ -61,7 +61,7 @@ body {
   .contact {
     .navbar-nav {
       li:nth-of-type(4) {
-        background: white;
+        background: $tan-light;
         font-weight: 700;
         border-radius: 0rem 0rem 1rem 1rem;
         a {color: black !important;}
@@ -80,7 +80,7 @@ body {
       transition: 0.3s ease-in-out;
       letter-spacing: 1px;
       min-width: 9rem;
-      margin: 0 0.1rem;
+      margin: 0 0.4rem;
       text-align: center;
       font-size: 1.6rem;
       a {transition: 0.3s ease-in;}
@@ -89,6 +89,9 @@ body {
         a {
           color: black !important;
         }
+      }
+      &:last-of-type() {
+        margin-right: 0;
       }
     }
   }

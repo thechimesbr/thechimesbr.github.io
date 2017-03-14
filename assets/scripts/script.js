@@ -11,6 +11,9 @@ $(document).ready(function() {
       pager: false,
       easing: 'swing',
     });
+    $('.box').click(function(){
+     window.location.href='menu.html';
+    });
   } else {
     $('#main').smoothState();
   };

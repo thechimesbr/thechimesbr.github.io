@@ -38,6 +38,21 @@
         {% include navigation.html %}
         {% include base-hero.html %}
       </div>
+    {% elsif page.title == 'Appetizers' %}
+        <div class="appetizers">
+          {% include navigation.html %}
+          {% include base-hero.html %}
+        </div>
+    {% elsif page.title == 'Soups and Salads' %}
+        <div class="soups-and-salads">
+          {% include navigation.html %}
+          {% include base-hero.html %}
+        </div>
+    {% elsif page.title == 'Desserts' %}
+        <div class="desserts">
+          {% include navigation.html %}
+          {% include base-hero.html %}
+        </div>
     {% elsif page.title == 'Gallery' %}
       <div class="gallery">
         {% include navigation.html %}

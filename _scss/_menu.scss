@@ -1,6 +1,30 @@
 .menu {
   section#base-hero {
-    background: url('https://s3.amazonaws.com/ijadams/parrains/interior1.jpg') no-repeat;
+    background: url('https://s3.amazonaws.com/ijadams/parrains/entrees.jpg') no-repeat;
+    background-position: 50% 25%;
+    background-size: cover;
+  }
+}
+
+.appetizers {
+  section#base-hero {
+    background: url('https://s3.amazonaws.com/ijadams/parrains/apps.jpg') no-repeat;
+    background-position: 50% 25%;
+    background-size: cover;
+  }
+}
+
+.soups-and-salads {
+  section#base-hero {
+    background: url('https://s3.amazonaws.com/ijadams/parrains/salads.jpg') no-repeat;
+    background-position: 50% 25%;
+    background-size: cover;
+  }
+}
+
+.desserts {
+  section#base-hero {
+    background: url('https://s3.amazonaws.com/ijadams/parrains/desserts.jpg') no-repeat;
     background-position: 50% 25%;
     background-size: cover;
   }
@@ -12,7 +36,7 @@
     padding: 0;
     li {
       &.first {
-        font-weight: 400;
+        font-weight: 700;
         padding-right: 1rem;
       }
       padding: 0 0.4rem;

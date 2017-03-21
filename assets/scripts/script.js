@@ -15,7 +15,7 @@ $(document).ready(function() {
      window.location.href='menu.html';
     });
   } else {
-    $('#main').smoothState();
+      //do something
   };
 
   $('.navbar-toggle').on('click', function(){

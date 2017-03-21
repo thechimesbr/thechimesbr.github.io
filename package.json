@@ -35,6 +35,5 @@
   ],
   "homepage": "https://github.com/demontrer/demontrer.github.io",
   "dependencies": {
-    "smoothstate": "^0.7.2"
   }
 }

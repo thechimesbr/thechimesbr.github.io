@@ -16,7 +16,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.5/jquery.bxslider.min.css" />
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     {% if page.title == 'Gallery' %}
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/blueimp-gallery/2.25.0/css/blueimp-gallery.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/featherlight/1.7.1/featherlight.gallery.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/featherlight/1.7.1/featherlight.min.css" />
     {% endif %}
@@ -78,6 +77,13 @@
         {{ content }}
       </div>
     </section>
+
+    {% if page.title == 'Contact' %}
+    <section class="map-footer">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13761.750020583373!2d-91.1555516!3d30.4236972!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd41ee5f6ee71cc43!2sParrain&#39;s+Seafood+Restaurant!5e0!3m2!1sen!2sus!4v1488741552919" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </section>
+    {% endif %}
+
     {% include footer.html %}
 
     <!-- Scripts -->

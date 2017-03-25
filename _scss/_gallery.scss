@@ -1,16 +1,23 @@
 //gallery
 .gallery {
   section#base-hero {
-    background: url('https://s3.amazonaws.com/ijadams/parrains/ext2.jpg') no-repeat;
+    background: url('https://s3.amazonaws.com/ijadams/parrains/parrains-sign.jpg') no-repeat;
     background-position: 50% 25%;
     background-size: cover;
   }
+}
+
+.grid {
+    margin-top: 4rem;
 }
 
 .grid-item {
     float: left;
     margin-bottom: 25px;
     width: calc(33.33% - 25px);
+    @media screen and (max-width: 40rem) {
+        width: 100%;
+    }
     img {
         width: 100%;
         height: auto;

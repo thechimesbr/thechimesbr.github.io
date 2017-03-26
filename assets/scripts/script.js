@@ -21,9 +21,9 @@ $(document).ready(function() {
             var elOffset = $('#base-hero').offset().top;
             var mainOffset = (elOffset - scrollTop) / 15;
             $('#base-hero').css({
-                'filter': 'blur(' + mainOffset + 'px)',
-                '-webkit-filter': 'blur(' + mainOffset + 'px)',
-                '-moz-filter': 'blur(' + mainOffset + 'px)',
+                'filter': 'blur(' + parseInt(-scrollTop / 6) + 'px)',
+                '-webkit-filter': 'blur(' + parseInt(-scrollTop / 6) + 'px)',
+                '-moz-filter': 'blur(' + parseInt(-scrollTop / 6) + 'px)',
                 'opacity': 1 - (Math.abs(mainOffset ) / 18),
                 'background-position': '50% ' + parseInt(-scrollTop / 6) + 'px'
             });

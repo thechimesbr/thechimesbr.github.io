@@ -2,9 +2,8 @@
   height: 50vh;
   position: relative;
   background: url('https://s3.amazonaws.com/ijadams/parrains/baton-rouge.jpg') no-repeat;
-  background-position: 50% inherit;
+  background-position: 0% inherit;
   background-size: cover;
-  background-attachment: fixed;
   @media screen and (max-width: 40rem) {
       background-position: center;
   }

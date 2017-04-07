@@ -7,6 +7,13 @@ canonical: http://demontrer.github.io/gallery.html
 <h1>Gallery</h1>
 
 <div class="grid">
+    {% for i in (61..72) %}
+        <div class="grid-item">
+            <a href="{{ site.baseurl }}/assets/images/gallery/{{ i }}s.jpg">
+                <img src="{{ site.baseurl }}/assets/images/gallery/{{ i }}.jpg">
+            </a>
+        </div>
+    {% endfor %}
     {% for i in (1..16) %}
         <div class="grid-item">
             <a href="{{ site.baseurl }}/assets/images/gallery/{{ i }}.jpg">

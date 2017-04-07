@@ -75,7 +75,7 @@ body {
     float: right;
     font-size: 1.6rem;
     li {
-      padding-top: 1rem;
+      padding-top: 1.8rem;
       border-radius: 0rem 0rem 1rem 1rem;
       transition: 0.3s ease-in-out;
       letter-spacing: 1px;
@@ -101,7 +101,10 @@ body {
       font-size: 4rem;
     }
     img {
-      max-width: 150px;
+      max-width: 200px;
+      @media screen and (max-width: 40rem) {
+          max-width: 150px;
+      }
     }
   }
   .navbar-default {
@@ -171,7 +174,7 @@ body {
     }
     .navbar-brand {
       color: black;
-      margin-top: 1rem;
+      margin-top: 0.8rem;
       &.open {
         position: fixed;
       }

@@ -3,6 +3,9 @@
     background: url('https://s3.amazonaws.com/ijadams/parrains/parrains-exterior-2.jpg') no-repeat;
     background-position: 50% inherit;
     background-size: cover;
+    @media screen and (max-width: 40rem) {
+        background-position: 50%;
+    }
   }
 }
 #about {
@@ -54,6 +57,15 @@
       color: white !important;
       box-shadow: inset 0 100px 0 0 black;
       border-image: url(https://s3.amazonaws.com/ijadams/parrains/push-line5.png) 30 0 round;
+    }
+    @media screen and (max-width: 40rem) {
+      width: 100%;
+      max-width: 100%;
+      background: black;
+      color: white;
+      &:hover {
+        box-shadow: none;
+      }
     }
   }
 }

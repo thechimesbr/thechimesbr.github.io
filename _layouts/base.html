@@ -21,6 +21,10 @@
     {% endif %}
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
 
+    {% if page.title == 'Menu' || page.title == 'Appetizers' || page.title == 'Appetizers' || page.title == 'Soups and Salads' || page.title == 'Desserts' %}
+    <script src="https://promotions.waitrapp.com/widget.js" data-waitr-partner-id="1102" async defer></script>
+    {% endif %}
+
     <!--[if lte IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -79,9 +83,9 @@
     </section>
 
     {% if page.title == 'Contact' %}
-    <section class="map-footer">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13761.750020583373!2d-91.1555516!3d30.4236972!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd41ee5f6ee71cc43!2sParrain&#39;s+Seafood+Restaurant!5e0!3m2!1sen!2sus!4v1488741552919" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <section class="map-footer" onclick="style.pointerEvents='none'">
     </section>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13761.750020583373!2d-91.1555516!3d30.4236972!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd41ee5f6ee71cc43!2sParrain&#39;s+Seafood+Restaurant!5e0!3m2!1sen!2sus!4v1488741552919" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
     {% endif %}
 
     {% include footer.html %}

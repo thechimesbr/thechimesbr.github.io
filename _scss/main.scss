@@ -68,6 +68,12 @@ body {
   }
 }
 
+#attrib {
+    a:hover {
+        color: black;
+    }
+}
+
 @import 'navigation';
 @import 'footer';
 @import 'syntaxHighlighter';

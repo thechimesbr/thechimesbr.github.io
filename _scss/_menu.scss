@@ -48,11 +48,14 @@
         &.active {
           color: black;
           border-bottom: 0.2rem solid black;
+          border-image: url(https://s3.amazonaws.com/ijadams/parrains/push-line5.png) 60 0 round;
+          font-weight: 400;
         }
         &:hover {
           cursor: pointer;
           text-decoration: none;
           border-bottom: 0.2rem solid black;
+          border-image: url(https://s3.amazonaws.com/ijadams/parrains/push-line5.png) 60 0 round;
         }
       }
     }

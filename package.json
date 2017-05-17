@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/demontrer/demontrer.github.io"
+    "url": "https://github.com/demontrer/parrains.com"
   },
   "keywords": [
     "jekyll",
@@ -33,7 +33,7 @@
     "materialize",
     "jquery"
   ],
-  "homepage": "https://github.com/demontrer/demontrer.github.io",
+  "homepage": "https://github.com/demontrer/parrains.com",
   "dependencies": {
   }
 }

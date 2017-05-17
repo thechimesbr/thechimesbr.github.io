@@ -9,7 +9,7 @@
 title: Parrains Seafood
 email: ijadams503@gmail.com
 description: Parrains Seafood - Baton Rouge, LA
-url: "http://demontrer.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://parrains.com/" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 markdown: kramdown

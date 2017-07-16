@@ -1,7 +1,7 @@
 {
-  "name": "parrains-jekyll-site",
+  "name": "thechimes-jekyll-site",
   "version": "0.0.1",
-  "description": "A static site for Parrains Seafood.",
+  "description": "A static site for The Chimes.",
   "main": "gulpfile.js",
   "scripts": {},
   "author": "Ian Adams",
@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://parrains.com"
+    "url": "https://thechimes.com"
   },
   "keywords": [
     "jekyll",
@@ -33,7 +33,7 @@
     "materialize",
     "jquery"
   ],
-  "homepage": "https://parrains.com",
+  "homepage": "https://thechimes.com",
   "dependencies": {
   }
 }

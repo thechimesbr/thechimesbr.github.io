@@ -1,1 +1,1 @@
-## Static site for Parrains Seafood :fish:
+## Static site for The Chimes Restaurants :beer:

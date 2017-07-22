@@ -48,7 +48,7 @@ gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
 });
 
 /**
- * Compile files from _scss into both _site/css (for live injecting) and site (for future jekyll builds)
+ * Compile files from _sass into both _site/css (for live injecting) and site (for future jekyll builds)
  */
 gulp.task('sass', function () {
     var processors = [
@@ -56,9 +56,9 @@ gulp.task('sass', function () {
             csswring,
             cssnano,
           ];
-    return gulp.src('_scss/main.scss')
+    return gulp.src('_sass/main.sass')
         .pipe(sass({
-            includePaths: ['scss'],
+            includePaths: ['sass'],
             onError: browserSync.notify
         }))
         .pipe(postcss(processors))
@@ -68,11 +68,11 @@ gulp.task('sass', function () {
 });
 
 /**
- * Watch scss files for changes & recompile
+ * Watch sass files for changes & recompile
  * Watch html/md/js/image/json files, run jekyll & reload BrowserSync
  */
 gulp.task('watch', function () {
-    gulp.watch('_scss/*.scss', ['sass']);
+    gulp.watch('_sass/*.sass', ['sass']);
     gulp.watch(['./**/*.html', '_data/*.json', 'assets/scripts/*.js', 'assets/images/*.*', 'assets/fonts/*.*', './**/*.md'], ['jekyll-rebuild']);
 });
 

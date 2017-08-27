@@ -24,7 +24,7 @@
       <meta property="og:title" content="The Chimes">
       <meta property="og:url" content="http://thechimes.com/">
       <meta property="og:description" content="Welcome to The Chimes Restaurant. Parrain's Restaurant opened in September 2001 with a commitment to bring you the freshest and highest quality seafood in town.">
-      <meta property="og:image" content="https://s3.amazonaws.com/ijadams/thechimes/specialties.jpg">
+      <meta property="og:image" content="https://s3.amazonaws.com/ijadams/parrains/specialties.jpg">
       <meta property="restaurant:menu" content="thechimes.com/menu.html">
       <meta property="restaurant:contact_info:website" content="The Chimes Restaurant">
       <meta property="restaurant:contact_info:street_address" content="3357 Highland Rd">
@@ -34,19 +34,24 @@
       <meta property="restaurant:contact_info:country_name" content="United States">
       <meta property="restaurant:contact_info:email" content="">
       <meta property="restaurant:contact_info:phone_number" content="">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.5/jquery.bxslider.min.css" />
 
   </head>
   <body class="home">
+
+    <div id="top-bar"></div>
+
+    {% include header.html %}
+    {% include hero.html %}
+    {% include about.html %}
+    {% include menus.html %}
+
+    <!-- Scripts -->
     <script
       src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous">
     </script>
-
-    <p>
-        The Chimes
-    </p>
-
-    <!-- Scripts -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.5/jquery.bxslider.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/featherlight/1.7.1/featherlight.min.js"></script>
     <script src="{{ site.baseurl }}/assets/scripts/script.js"></script>
   </body>
 </html>

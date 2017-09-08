@@ -1,7 +1,18 @@
+@import "variables"
+
+.slicknav_menu
+    display: none
+    background: $primary
+    @media screen and (max-width: 768px)
+            display: block
+    .slicknav_btn
+        background: none
 #top-bar
     height: 0.8rem
     background: #550002
     width: 100%
+    @media screen and (max-width: 768px)
+        display: none
 header
     position: relative
     width: 100%
@@ -10,7 +21,9 @@ header
     padding: 0 2.4rem
     nav
         margin-top: 1.8rem
-        ul 
+        @media screen and (max-width: 768px)
+            display: none
+        ul
             li
                 display: inline-block
                 padding: 0 0.8rem

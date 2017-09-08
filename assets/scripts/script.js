@@ -9,4 +9,5 @@ $(document).ready(function() {
       pager: false,
       easing: 'swing',
     });
+    $('nav ul').slicknav();
 });

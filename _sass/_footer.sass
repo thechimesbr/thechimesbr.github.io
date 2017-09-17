@@ -2,16 +2,60 @@
 
 footer
     min-height: 33vh
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: flex
+    align-items: center
+    justify-content: center
     .container
         width: 100%
         height: 100%
         display: block
+        .row.form
+            text-align: center
+            width: 80%
+            padding-top: 4rem
+            padding-bottom: 8rem
+            border-bottom: 2px solid $primary2
+            @media screen and (max-width: 768px)
+                width: 100%
+            input, textarea
+                display: block
+                margin: 1.8rem auto
+                width: 50%
+                background: none
+                box-shadow: none
+                border: 0
+                border-bottom: 2px solid $primary2
+                transition: 0.2s ease-in-out
+                @media screen and (max-width: 768px)
+                    width: 100%
+                &:focus, &:active
+                    border: 0
+                    border-bottom: 2px solid $primary3
+                    outline: 0
+            button
+                margin-top: 2rem
+                padding: 0.4rem 0.8rem
+                background: transparent
+                border: 0.2rem solid $primary2
+                color: $primary2
+                text-transform: uppercase
+                font-size: 300
+                letter-spacing: 1px
+                width: 160px
+                text-decoration: none
+                transition: 0.3s ease-in-out
+                &:focus, &:active
+                    outline: 0
+                &:hover
+                    background: $primary3
+                    color: white
+                    border-color: $primary3
+
         .row
             padding: 2rem 2rem
-            > div
+            text-align: center
+            margin: 0 auto
+            div
                 text-align: center
                 color: $secondary2
                 @media screen and (max-width: 64rem)
@@ -35,6 +79,3 @@ footer
                             transition: 0.2s ease-in-out
                             &:hover
                                 color: $primary2
-
-
-

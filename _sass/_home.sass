@@ -65,7 +65,8 @@
                 display: block
 
 #beer-university
-    min-height: 100vh
+    @media screen and (max-width: 768px)
+        min-height: 100vh
     .beer-u-container
         background: none
         color: inherit
@@ -95,7 +96,6 @@
     .photos
         .row
             margin: 0.8rem
-            padding-bottom: 0.8rem
             div
                 padding: 0
                 height: 50vh

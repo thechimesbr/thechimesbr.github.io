@@ -20,16 +20,61 @@
             </p>
             <ul>
                 <li>
-                    <a class="button" href="#east">EAST</a>
+                    <button class="button" data-toggle="modal" data-target="#eastMenu">EAST</button>
                 </li>
                 <li>
-                    <a class="button" href="#highland">HIGHLAND</a>
+                    <button class="button" data-toggle="modal" data-target="#highlandMenu">HIGHLAND</button>
                 </li>
                 <li>
-                    <a class="button" href="#covington">COVINGTON</a>
+                    <button class="button" data-toggle="modal" data-target="#covingtonMenu">COVINGTON</button>
                 </li>
             </ul>
         </div>
     </div>
+
+    <!-- east menu -->
+    <div class="modal fade" id="eastMenu" tabindex="-1" role="dialog" aria-labelledby="eastMenuLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    {% include east.html %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- highland menu -->
+    <div class="modal fade" id="highlandMenu" tabindex="-1" role="dialog" aria-labelledby="highlandMenuLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    {% include highland.html %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- east menu mobile -->
+    <div class="modal fade" id="covingtonMenu" tabindex="-1" role="dialog" aria-labelledby="covingtonMenuLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    {% include covington.html %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 
 </section>

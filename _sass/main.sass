@@ -3,6 +3,7 @@
 
 @import 'header'
 @import 'home'
+@import 'modal'
 @import 'footer'
 
 html
@@ -18,6 +19,8 @@ body
     background: $bg url('../images/texture.jpg')
     background-size: 597px 545px
     font-family: 'Merriweather', serif
+
+    //links and buttons
     a:hover
         cursor: pointer
     ul li a:hover
@@ -34,6 +37,7 @@ body
         width: 160px
         text-decoration: none
         transition: 0.3s ease-in-out
+        outline: none
         &:hover
             background: $bg
             color: $primary3

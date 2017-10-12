@@ -40,12 +40,13 @@ body
                     li
                         display: inline-block
                         padding: 0 0.8rem
-                        &.active
+                        transition: 0.2s ease-in-out
+                        &.cycle-pager-active
                             color: $primary2
-                .menu-header
-                    margin: 3.2rem auto
-                    width: 100%
                 .menu-content
+                    .menu-header
+                        margin: 3.2rem auto
+                        width: 100%
                     h5
                         text-transform: uppercase
                         margin: 3rem auto 3.5rem auto

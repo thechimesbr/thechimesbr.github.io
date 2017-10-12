@@ -5,19 +5,21 @@
     </div>
     <div class="modalNav">
         <ul id="custom-pager">
-            <li class="active">Appetizers</li>
-            <li>Lunch & Dinner</li>
-            <li>Sides</li>
-            <li>Desserts</li>
+            <!--<li class="active">Appetizers</li>-->
+            <!--<li>Lunch & Dinner</li>-->
+            <!--<li>Sides</li>-->
+            <!--<li>Desserts</li>-->
         </ul>
     </div>
-    <div class="menu-header">
-        <img src="{{ site.baseurl }}/assets/images/apps-header.jpg"/>
-    </div>
 
-    <div class="menu-content">
+    <div id="eastMenuSlider" class="menu-content cycle-slideshow" data-cycle-fx="fade" data-cycle-timeout="0" data-cycle-pager="#custom-pager" data-cycle-slides="> article" data-cycle-auto-height="1">
 
-        <article id="appetizers">
+        <article id="appetizers" class="menuSlide cycle-slide cycle-slide-active" data-cycle-pager-template="<li>Appetizers </li>">
+
+            <div class="menu-header">
+                <img src="{{ site.baseurl }}/assets/images/apps-header.jpg"/>
+            </div>
+
             <div class="row">
                 <h5>Snacks</h5>
                 <p>Fried Pickles 6</p>
@@ -38,9 +40,14 @@
                 <p>Boudin Balls 8</p>
                 <p>Blackened Shrimp Nachos 10</p>
             </div>
+
         </article>
 
-        <article id="lunch-and-dinner">
+        <article id="lunch-and-dinner" class="menuSlide cycle-slide cycle-slide-active" data-cycle-pager-template="<li>Lunch & Dinner </li>">
+
+            <div class="menu-header">
+                <img src="{{ site.baseurl }}/assets/images/lunch-and-dinner-header.jpg"/>
+            </div>
 
             <div class="row">
                 <h5>From the Oyster Bar</h5>
@@ -137,7 +144,10 @@
 
         </article>
 
-        <article id="sides">
+        <article id="sides" class="menuSlide cycle-slide cycle-slide-active" data-cycle-pager-template="<li>Sides </li>">
+            <div class="menu-header">
+                <img src="{{ site.baseurl }}/assets/images/sides-header.jpg"/>
+            </div>
             <div class="row">
                 <h5>Soup</h5>
                 <p>Seafood Gumbo sm 5.5 &middot; lg 7.5</p>
@@ -156,7 +166,10 @@
             </div>
         </article>
 
-        <article id="desserts">
+        <article id="desserts" class="menuSlide cycle-slide cycle-slide-active" data-cycle-pager-template="<li>Desserts </li>">
+            <div class="menu-header">
+                <img src="{{ site.baseurl }}/assets/images/desserts-header.jpg"/>
+            </div>
             <div class="row">
                 <h5>Desserts</h5>
                 <p>Hot Fudge Brownie Sundae 6</p>

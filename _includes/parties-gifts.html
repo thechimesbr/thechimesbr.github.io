@@ -10,7 +10,22 @@
         <div class="row">
             <h2>GIFT CARDS</h2>
             <p>Looking for the perfect gift? We got you covered.</p>
-            <a href="#" class="button">BUY NOW</a>
+            <button class="button" data-toggle="modal" data-target="#giftcardForm">BUY NOW</button>
         </div>
     </div>
 </section>
+
+
+<!-- gift card form -->
+<div class="modal fade" id="giftcardForm" tabindex="-1" role="dialog" aria-labelledby="giftcardFormLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+                {% include gift-card.html %}
+            </div>
+        </div>
+    </div>
+</div>

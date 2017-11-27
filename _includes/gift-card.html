@@ -1,3 +1,27 @@
 <section id="gift-card-form">
-
+    <h3>GIFT CARDS</h3>
+    <form id="payment-form">
+        <input type="text" name="customer_name" placeholder="Your name">
+        <input type="email" name="customer_email" placeholder="Your email">
+        <label for="quantity">Select quantity:</label>
+        <select id="quantity" name="quantity">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+        <label for="value">Select value:</label>
+        <select id="value" name="value">
+            <option value="25.0">$25.00</option>
+            <option value="50.0">$50.00</option>
+            <option value="75.0">$75.00</option>
+            <option value="100.0">$100.00</option>
+        </select>
+        <textarea name="message" placeholder="Your comments"></textarea>
+        <div id="card-element"></div>
+        <div id="card-errors" role="alert"></div>
+        <input type="submit" value="Submit" class="button">
+    </form>
+    <div id="response"></div>
 </section>

@@ -44,20 +44,23 @@ form.addEventListener('submit', function (event) {
         // // Submit the form
         console.log('res2', token);
 
+        var formData = {
+            customer_name: $('#customer_name').val(),
+            email: $('#customer_email').val(),
+            quantity: $('#quantity').val(),
+            value: $('#value').val(),
+            message: $('#message').val()
+        };
+
+        formData.amount = formData.quantity * formData.amount;
+
         $.ajax({
             type: 'POST',
             url: 'https://wt-85767222a036891b1cedd0909d84c5ff-0.run.webtask.io/webtask-stripe-order-test',
             headers: {
                 stripeToken: token.id
             },
-            data: {
-                customer_name: $('#customer_name').val(),
-                email: $('#customer_email').val(),
-                quantity: $('#quantity').val(),
-                value: $('#value').val(),
-                amount: this.quantity * this.value,
-                message: $('#message').val()
-            },
+            data: formData,
             dataType: 'json'
         }).done(function (data) {
             console.log('data', data);

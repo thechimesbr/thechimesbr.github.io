@@ -18,3 +18,7 @@ gems:
     - jekyll-minifier
 jekyll-minifier:
   exclude: ["assets/css/*.css","*.min.*"]
+plugins:
+    - jekyll-redirect-from
+whitelist:
+    - jekyll-redirect-from

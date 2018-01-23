@@ -23,5 +23,26 @@ $(document).ready(function() {
       }
     }
   });
-    
+
+$("#privateParties").change(function() {
+    if ($(this).is(":checked")) {
+        $("#location-container").show();
+    } else {
+        $("#location-container").hide();
+    }
+});
+
+  $("#loc").change(function() {
+    var locationEmail = $(this).val();
+    if (locationEmail == 'contactchimes@thechimes.com') {
+        alert('Private parties are not available at The Chimes East');
+        $('#privateParties').prop('checked', false);
+        $("#location-container").hide();
+        $('#loc').val(0);
+        $("#contact").attr("action", "http://formspree.io/contactchimes@thechimes.com");
+    } else {
+        $("#contact").attr("action", "http://formspree.io/" + locationEmail);
+    }
+  });
+
 });

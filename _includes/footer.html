@@ -3,11 +3,23 @@
         <div class="row form">
             <h3>Contact Us</h3>
             <form method="POST" id="contact"
-              action="http://formspree.io/thechimesbr@gmail.com">
+              action="http://formspree.io/contactchimes@thechimes.com">
                 <input type="text" name="fullname" placeholder="Your name">
                 <input type="text" name="phone" placeholder="Your number">
                 <input type="email" name="email" placeholder="Your email">
                 <textarea name="message" placeholder="Your comments"></textarea>
+                <div id="private-parties-container">
+                    <label for"privateParties">Interested in private parties?</label>
+                    <input id="privateParties" type="checkbox">
+                </div>
+                <div id="location-container">
+                    <label for="location">Please select a location</label>
+                    <select id="loc" name="location">
+                      <option value="highland.events@thechimes.com">Highland</option>
+                      <option value="covington.events@thechimes.com">Covington</option>
+                      <option value="contactchimes@thechimes.com">East</option>
+                    </select>
+                </div>
                 <button class="form-button" type="submit">Send</button>
             </form>
         </div>

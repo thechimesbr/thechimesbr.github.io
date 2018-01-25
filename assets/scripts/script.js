@@ -27,6 +27,14 @@ $(document).ready(function() {
 $("#privateParties").change(function() {
     if ($(this).is(":checked")) {
         $("#location-container").show();
+        var selectedLocation = $("#loc").val();
+        if (selectedLocation == 'east') {
+            $("#contact").attr("action", "http://formspree.io/contactchimes@thechimes.com");
+        } else if (selectedLocation == 'highland') {
+            $("#contact").attr("action", "http://formspree.io/highland.events@thechimes.com");
+        } else if (selectedLocation == 'covington') {
+            $("#contact").attr("action", "http://formspree.io/covington.events@thechimes.com");
+        }
     } else {
         $("#location-container").hide();
     }

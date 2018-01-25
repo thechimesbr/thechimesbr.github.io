@@ -38,6 +38,28 @@ footer
                     border: 0
                     border-bottom: 2px solid $primary3
                     outline: 0
+            .form-group
+                text-align: center
+                margin: 0 auto
+                padding-top: 2rem
+                div#filterDate2
+                    text-align: center
+                    margin: 0 auto
+                    width: 50%
+                    @media screen and (max-width: 768px)
+                        width: 100%
+                    .input-group-addon
+                        padding: 1rem 1.5rem
+                        border-radius: 0
+                        border: 2px solid $primary2
+                        color: $primary2
+                        &:hover
+                            cursor: pointer
+                    input
+                        width: 100%
+                        margin-bottom: 0
+                        text-align: center
+
             button
                 margin-top: 2rem
                 padding: 0.4rem 0.8rem
@@ -68,6 +90,9 @@ footer
                     display: block
                     margin: 0 auto
                     color: black
+                    @media screen and (max-width: 768px)
+                        width: 100%
+                        background: white
 
         .row
             padding: 2rem 2rem
@@ -97,3 +122,16 @@ footer
                             transition: 0.2s ease-in-out
                             &:hover
                                 color: $primary2
+
+
+#east-location-validation
+    .modal-content
+        height: 100%
+        .modal-body
+            width: 50%
+            text-align: center
+            margin: 0 auto
+            @media screen and (max-width: 768px)
+                width: 80%
+            @media screen and (max-width: 480px)
+                width: 90%

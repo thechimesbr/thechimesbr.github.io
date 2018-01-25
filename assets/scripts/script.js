@@ -35,7 +35,7 @@ $("#privateParties").change(function() {
   $("#loc").change(function() {
     var locationEmail = $(this).val();
     if (locationEmail == 'contactchimes@thechimes.com') {
-        alert('Private parties are not available at The Chimes East');
+        $("#east-location-validation").modal()
         $('#privateParties').prop('checked', false);
         $("#location-container").hide();
         $('#loc').val(0);
@@ -44,5 +44,7 @@ $("#privateParties").change(function() {
         $("#contact").attr("action", "http://formspree.io/" + locationEmail);
     }
   });
+
+   $('.input-group.date').datepicker({format: "dd.mm.yyyy"});
 
 });

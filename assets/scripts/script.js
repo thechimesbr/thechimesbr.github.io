@@ -33,15 +33,17 @@ $("#privateParties").change(function() {
 });
 
   $("#loc").change(function() {
-    var locationEmail = $(this).val();
-    if (locationEmail == 'contactchimes@thechimes.com') {
+    var selectedLocation = $(this).val();
+    if (selectedLocation == 'east') {
         $("#east-location-validation").modal()
         $('#privateParties').prop('checked', false);
         $("#location-container").hide();
         $('#loc').val(0);
         $("#contact").attr("action", "http://formspree.io/contactchimes@thechimes.com");
-    } else {
-        $("#contact").attr("action", "http://formspree.io/" + locationEmail);
+    } else if (selectedLocation == 'highland') {
+        $("#contact").attr("action", "http://formspree.io/highland.events@thechimes.com");
+    } else if (selectedLocation == 'covington') {
+        $("#contact").attr("action", "http://formspree.io/covington.events@thechimes.com");
     }
   });
 

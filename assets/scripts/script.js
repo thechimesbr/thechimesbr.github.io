@@ -14,11 +14,11 @@ $(document).ready(function() {
     });
 
 
-    $(window).on("orientationchange resize", function () {
-
-      slider.reloadSlider();
-
-    });
+    if ($(window).width() > 768) {
+        $(window).on("orientationchange resize", function () {
+            slider.reloadSlider();
+        });
+    }
 
     $('nav ul').slicknav();
 

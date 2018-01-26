@@ -1,5 +1,8 @@
+var silder;
+
 $(document).ready(function() {
-    $('.bxslider').bxSlider({
+
+    slider = $('.bxslider').bxSlider({
       mode: 'fade',
       speed: 1000,
       pause: 7500,
@@ -7,8 +10,16 @@ $(document).ready(function() {
       auto: true,
       autoControls: false,
       pager: false,
-      easing: 'swing',
+      easing: 'swing'
     });
+
+
+    $(window).on("orientationchange resize", function () {
+
+      slider.reloadSlider();
+
+    });
+
     $('nav ul').slicknav();
 
     $('a[href*="#"]:not([href="#"])').click(function() {
